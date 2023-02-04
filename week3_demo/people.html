@@ -6,14 +6,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Levi Germeil" >
     <meta name="description" content="Change This" >
-    <title>Change This</title>
+    <title>The Last of Us</title>
 </head>
+
+    <style>
+        /*write CSS in here*/
+
+        /*select elements by TYPE - applies to all tags of that type*/
+        div {
+            border:1px solid black;
+            padding:10px;
+            margin:5px;
+        }
+
+        /*select elements by #ID - applies ONLY to element with that ID*/
+        #wrapper {
+            background-color:grey;
+            width:900px;
+            margin:auto; /*centers element in page; auto equal left + right space*/
+        }
+
+        /*select elements by .CLASS - applies only to elements with that CLASS*/
+        .border {
+            border:2px solid maroon;
+        }
+
+        #nav {
+            border:2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .pics {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width:500px;
+            
+            padding:10px;
+            box-shadow:0 0 8px black;/*drop shadow*/
+        }
+
+        #title {
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+    </style>
+
 <body>
     <div id="Wrapper">
 
         <div id="header" class="border">
 
-            <h1 id="title" class="fancy">The Last of Us</h1>
+            <h1 id="title" class="fancy">The Last of Us </h1>
 
         </div><!--/ #header-->
 
@@ -33,7 +83,8 @@
         </div><!--/ #nav-->
 
         <div id="main-content" class="border">
-            <h2>Content for <b>PEOPLE</b> page</h2>
+            <h2>Content for <b>people</b> page</h2>
+           
 
         </div><!--/ #main-content-->
 
@@ -41,7 +92,7 @@
             <p>&copy; iVelly | SE111.02</p>
             <br>
             <a href="https://www.hbo.com/the-last-of-us">| Official HBO Site |</a>
-            <a href="#footer">| Bottom of Page |</a>
+            <a href="#header">| Top of Page |</a>
 
         </div><!--/ #footer-->
 
