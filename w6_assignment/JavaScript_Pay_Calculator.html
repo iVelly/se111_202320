@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="Author" content="Levi Germeil">
+    <meta name="Description" content="JavaScript Pay Calculator">
+
+    <title>JavaScript Pay Calculator</title>
+</head>
+<body>
+    <h1>Pay Calculator</h1>
+
+    <script>
+        // Prompt the user for hourly pay rate and hours worked
+        var payRate = Number(prompt("Please enter your hourly pay rate:"));
+        var hoursWorked = Number(prompt("Please enter the number of hours worked in a two-week period:"));
+
+        // Calculate gross pay
+        var grossPay = payRate * hoursWorked;
+
+        // Calculate Uncle Sam's share (using a tax rate of 20%)
+        var taxRate = 0.2;
+        var uncleSamsShare = grossPay * taxRate;
+
+        // Calculate net pay
+        var netPay = grossPay - uncleSamsShare;
+
+        // Display results to the user using an alert box
+        alert(`Gross Pay: $${grossPay.toFixed(2)}\nUncle Sam's Share: $${uncleSamsShare.toFixed(2)}\nNet Pay: $${netPay.toFixed(2)}`);
+
+        // Log results to the console for debugging purposes
+        console.log(`Gross Pay: $${grossPay.toFixed(2)}`);
+        console.log(`Uncle Sam's Share: $${uncleSamsShare.toFixed(2)}`);
+        console.log(`Net Pay: $${netPay.toFixed(2)}`);
+    </script>
+</body>
+</html>
