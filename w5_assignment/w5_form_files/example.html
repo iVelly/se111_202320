@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Your Name">
+    <meta name="description" content="Birthday Party Registration Form">
+
+    <title>Birthday Party Registration Form</title>
+
+    <!-- CSS styling -->
+    <style>
+        label {
+            display: inline-block;
+            width: 150px;
+            text-align: right;
+            margin-right: 10px;
+        }
+        input[type="text"], input[type="number"], input[type="date"], select {
+            width: 250px;
+            padding: 5px;
+            border: 2px solid gray;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        input[type="submit"] {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Birthday Party Registration Form</h1>
+
+    <!-- Form element that holds everything -->
+    <form method="POST" action="">
+
+        <!-- Label and form field for first name -->
+        <label for="firstName">First Name:</label>
+        <input type="text" name="firstName" id="firstName" required>
+
+        <br>
+
+        <!-- Label and form field for parent/guardian name -->
+        <label for="parentName">Parent/Guardian Name:</label>
+        <input type="text" name="parentName" id="parentName" required>
+
+        <br>
+
+        <!-- Label and form field for last name -->
+        <label for="lastName">Last Name:</label>
+        <input type="text" name="lastName" id="lastName" required>
+
+        <br>
+
+        <!-- Label and form field for child's first name -->
+        <label for="childFirstName">Child's First Name:</label>
+        <input type="text" name="childFirstName" id="childFirstName" required>
+
+        <br>
+
+        <!-- Label and form field for child's age -->
+        <label for="childAge">Child's Age:</label>
+        <input type="number" name="childAge" id="childAge" required min="1" max="18">
+
+        <br>
+
+        <!-- Label and form field for date -->
+        <label for="date">Date:</label>
+        <input type="date" name="date" id="date" required>
+
+        <br>
+
+        <!-- Label and form field for start time -->
+        <label for="startTime">Start Time:</label>
+        <input type="time" name="startTime" id="startTime" required>
+
+        <br>
+
+        <!-- Label and form field for number of guests -->
+        <label for="numGuests">Number of Guests:</label>
+        <input type="number" name="numGuests" id="numGuests" required min="1">
+
+        <br>
+
+        <!-- Label and form field for food size -->
+        <label for="foodSize">Food Size:</label>
+        <select name="foodSize" id="foodSize">
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
